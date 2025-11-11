@@ -25,7 +25,13 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
+		// Copy images from blog post directories to output
+		.addPassthroughCopy("./content/blog/**/*.{png,jpg,jpeg,gif,webp,svg}")
+		// Copy favicon to blog directory for pathPrefix compatibility
+		.addPassthroughCopy({
+			"./public/favicon.ico": "/blog/favicon.ico"
+		});
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

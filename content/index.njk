@@ -6,9 +6,25 @@ const eleventyNavigation = {
 
 const numberOfLatestPostsToShow = 3;
 ---
+<div class="home-header">
+	<h1 class="home-title">Gus's <span class="home-title-small">(dev?)</span> Blog</h1>
+	<img src="/header-image.png" alt="Header image" class="home-header-image">
+	<p class="home-description">A blog about development, personal experiences, food, and whatever else comes to mind.</p>
+</div>
+
+<div class="home-tags">
+	<h2 class="home-tags-title">Topics</h2>
+	<ul class="home-tags-list">
+		{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
+		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}

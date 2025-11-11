@@ -1,8 +1,39 @@
 <ol reversed class="postlist" style="--postlist-index: {{ (postslistCounter or postslist.length) + 1 }}">
 {%- for post in postslist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+		<a href="{{ post.url }}" class="postlist-box">
+			{%- if post.data.image %}
+			<div class="postlist-image">
+				{%- set rawImagePath = post.data.image %}
+				{%- set imagePath = rawImagePath %}
+				{%- if rawImagePath | slice(0, 2) == "./" %}
+					{%- set imageFileName = rawImagePath | replace("./", "") %}
+					{%- set postUrl = post.url %}
+					{%- if postUrl | slice(-1) != "/" %}
+						{%- set postUrl = postUrl + "/" %}
+					{%- endif %}
+					{%- set imagePath = postUrl + imageFileName %}
+				{%- elif rawImagePath | slice(0, 1) != "/" and rawImagePath | slice(0, 4) != "http" %}
+					{%- set postUrl = post.url %}
+					{%- if postUrl | slice(-1) != "/" %}
+						{%- set postUrl = postUrl + "/" %}
+					{%- endif %}
+					{%- set imagePath = postUrl + rawImagePath %}
+				{%- endif %}
+				<img src="{{ imagePath }}" alt="{% if post.data.imageAlt %}{{ post.data.imageAlt }}{% else %}{{ post.data.title }}{% endif %}" loading="lazy">
+			</div>
+			{%- endif %}
+			<div class="postlist-content">
+				<span class="postlist-number"></span>
+				<div class="postlist-text">
+					<span class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</span>
+					{%- if post.data.description %}
+					<p class="postlist-description">{{ post.data.description }}</p>
+					{%- endif %}
+					<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+				</div>
+			</div>
+		</a>
 	</li>
 {%- endfor %}
 </ol>
