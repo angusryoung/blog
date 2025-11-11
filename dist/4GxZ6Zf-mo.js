@@ -229,3 +229,62 @@ class HeadingAnchors extends HTMLElement {
 HeadingAnchors.register();
 
 export { HeadingAnchors }
+// Dark mode toggle functionality
+			(function() {
+				const darkModeToggle = document.getElementById('dark-mode-toggle');
+				const html = document.documentElement;
+
+				// Check for saved preference or default to system preference
+				const savedPreference = localStorage.getItem('darkMode');
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				
+				// Set initial state
+				if (savedPreference !== null) {
+					const isDark = savedPreference === 'true';
+					darkModeToggle.checked = isDark;
+					if (isDark) {
+						html.classList.remove('light-mode');
+						html.classList.add('dark-mode');
+					} else {
+						html.classList.remove('dark-mode');
+						html.classList.add('light-mode');
+					}
+				} else {
+					// If no saved preference, use system preference
+					darkModeToggle.checked = prefersDark;
+					if (prefersDark) {
+						html.classList.remove('light-mode');
+						html.classList.add('dark-mode');
+					} else {
+						html.classList.remove('dark-mode');
+						html.classList.add('light-mode');
+					}
+				}
+
+				// Handle toggle change
+				darkModeToggle.addEventListener('change', function() {
+					if (this.checked) {
+						html.classList.remove('light-mode');
+						html.classList.add('dark-mode');
+						localStorage.setItem('darkMode', 'true');
+					} else {
+						html.classList.remove('dark-mode');
+						html.classList.add('light-mode');
+						localStorage.setItem('darkMode', 'false');
+					}
+				});
+
+				// Listen for system preference changes (only if no manual preference set)
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+					if (localStorage.getItem('darkMode') === null) {
+						darkModeToggle.checked = e.matches;
+						if (e.matches) {
+							html.classList.remove('light-mode');
+							html.classList.add('dark-mode');
+						} else {
+							html.classList.remove('dark-mode');
+							html.classList.add('light-mode');
+						}
+					}
+				});
+			})();
