@@ -23,6 +23,10 @@
 	--text-color-link-visited: #17050F;
 
 	--syntax-tab-size: 2;
+
+	/* Dark Mode Toggle Variables */
+	--toggle-bg: #ccc;
+	--toggle-circle: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,7 +44,86 @@
 		--background-color: #232525;
 		/* --background-color: linear-gradient(90deg,rgba(83, 155, 184, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); */
 
+		/* Dark Mode Toggle Variables */
+		--toggle-bg: #555;
+		--toggle-circle: #fff;
 	}
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+	display: none;
+}
+
+.toggle {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	background: var(--toggle-bg);
+	border-radius: 30px;
+	position: relative;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.toggle::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 24px;
+	height: 24px;
+	background: var(--toggle-circle);
+	border-radius: 50%;
+	transition: transform 0.3s;
+}
+
+#dark-mode-toggle:checked + .toggle::before {
+	transform: translateX(30px);
+}
+
+/* Class-based dark mode (for manual toggle) - overrides media query */
+html.dark-mode {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color-link: #1493fb;
+	--text-color-link-active: #6969f7;
+	--text-color-link-visited: #a6a6f8;
+
+	--html-background-color: #232525;
+	--background-color: #232525;
+
+	--toggle-bg: #555;
+	--toggle-circle: #fff;
+}
+
+/* Class-based light mode (for manual toggle) - overrides media query */
+html.light-mode {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--html-background-color: #ffffff;
+	--background-color: #fff;
+
+	--toggle-bg: #ccc;
+	--toggle-circle: #fff;
+}
+
+html.light-mode {
+	background-color: var(--html-background-color);
+	background-image: var(--html-background-image);
+}
+
+html.dark-mode {
+	background-color: var(--background-color);
+	background-image: var(--html-background-image);
 }
 
 
