@@ -32,35 +32,35 @@
 		
 		<url>
 			<loc>https://example.com/blog/about/</loc>
-			<lastmod>2025-11-10</lastmod>
+			<lastmod>2025-11-11</lastmod>
 		</url>
 	
 	
 		
 		<url>
 			<loc>https://example.com/blog/blog/</loc>
-			<lastmod>2025-11-10</lastmod>
+			<lastmod>2025-11-11</lastmod>
 		</url>
 	
 	
 		
 		<url>
 			<loc>https://example.com/blog/</loc>
-			<lastmod>2025-11-10</lastmod>
+			<lastmod>2025-11-11</lastmod>
 		</url>
 	
 	
 		
 		<url>
 			<loc>https://example.com/blog/tags/</loc>
-			<lastmod>2025-11-10</lastmod>
+			<lastmod>2025-11-11</lastmod>
 		</url>
 	
 	
 		
 		<url>
 			<loc>https://example.com/blog/feed/feed.xml</loc>
-			<lastmod>2025-11-10</lastmod>
+			<lastmod>2025-11-11</lastmod>
 		</url>
 	
 </urlset>
