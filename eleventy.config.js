@@ -26,8 +26,8 @@ export default async function(eleventyConfig) {
 			"./public/": "/"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		// Copy images from blog post directories to output
-		.addPassthroughCopy("./content/blog/**/*.{png,jpg,jpeg,gif,webp,svg}")
+		// Copy images from all content directories to output
+		.addPassthroughCopy("./content/**/*.{png,jpg,jpeg,gif,webp,svg}")
 		// Copy favicon to blog directory for pathPrefix compatibility
 		.addPassthroughCopy({
 			"./public/favicon.ico": "/blog/favicon.ico"
@@ -70,12 +70,6 @@ export default async function(eleventyConfig) {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
-		templateData: {
-			eleventyNavigation: {
-				key: "Feed",
-				order: 4
-			}
-		},
 		collection: {
 			name: "posts",
 			limit: 10,

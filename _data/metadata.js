@@ -1,11 +1,11 @@
 export default {
 	title: "Gus's Blog",
-	url: "https://example.com/",
+	url: "https://angusryoung.github.io/blog/",
 	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "A blog about development, personal experiences, food, and whatever else comes to mind.",
 	author: {
 		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		email: "angusryoung@gmail.com",
+		url: "https://angusryoung.github.io/blog/"
 	}
 }
