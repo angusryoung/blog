@@ -1,18 +1,23 @@
 ---
-title: This is my fourth post
-description: This is a post on My Blog about touchpoints and circling wagons.
+title: React Multiplayer RPS Game 
+description: Using playroom kit I was able to build a simple rock paper scissors game.
 date: 2018-09-30
 image: ./egg-on-face.png
 imageAlt: Egg on my face
-tags: second tag
+tags: ["React", "Game Development"]
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+A while back, I had the pleasure of doing a game jam with some friends. We made a multiplayer platformer called [Cat Run](https://arkaniii.itch.io/cat-run), where you race with some friends. This introduced me to [PlayroomKit](https://joinplayroom.com/) , a development tool used to create real-time web-based multiplayer games.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+Anyway, I had some free time this evening and wanted to work on a React project.  I remembered that Playroomkit could be easily integrated with React applications. So I decided to create a small little rock-paper-scissors game. The game was quickly thrown together, taking inspiration from [Rock Paper Scissors Online](https://www.rpsgame.org/), but I am impressed in what I was able to do in such a short time.
 
-<img src="./possum.png" alt="A possum parent and two possum kids hanging from the iconic red balloon">
+In comparison, I once created a similar game using lua and the game looked horrible. Also it took me so much time to set up the multiplayer component of that game.
 
-## Section Header
+<img src="./rps.png" alt="My rps game">
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+To play, one player creates a lobby and sends a link to their friend. Once the friend joins the host can start the game.
 
+To create a lobby:
+https://angusryoung.github.io/react-game/
+
+To look at the code:
+https://github.com/angusryoung/react-game
