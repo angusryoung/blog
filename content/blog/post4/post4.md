@@ -10,7 +10,7 @@ A while back, I had the pleasure of doing a game jam with some friends. We made 
 
 Anyway, I had some free time this evening and wanted to work on a React project.  I remembered that Playroomkit could be easily integrated with React applications. So I decided to create a small little rock-paper-scissors game. The game was quickly thrown together, taking inspiration from [Rock Paper Scissors Online](https://www.rpsgame.org/), but I am impressed in what I was able to do in such a short time.
 
-In comparison, I once created a similar game using lua and the game looked horrible. Also it took me so much time to set up the multiplayer component of that game.
+In comparison, I once created a similar game using lua and the game looked horrible. Also it took me so much time to set up the multiplayer component of of my lua game.
 
 <img src="./rps.png" alt="My rps game">
 
