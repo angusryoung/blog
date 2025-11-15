@@ -27,24 +27,9 @@ https://github.com/angusryoung/react-game&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>Gus&#39;s First Post.</title>
-    <link href="https://example.com/blog/blog/post1/" />
-    <updated>2025-10-01T00:00:00Z</updated>
-    <id>https://example.com/blog/blog/post1/</id>
-    <content type="html">&lt;p&gt;Originally I was planing to create a website for the purpose of showing off some of my devlopement skills. The plan was to use either django, flask, or a combination of FASTAPI and React to create a website that I can use to show off my skills.&lt;/p&gt;
-&lt;p&gt;I quickly realized that I did not want to pay a cloud service provider to host the website and if possible wanted to host my blog on github pages. Unfortuantly github pages, while great at hosting static sites, is not so great at hosting dynamic web applications.&lt;/p&gt;
-&lt;p&gt;Even though I no longer was planing to use flask I still enjoyed using their templating engine &amp;quot;Jinga&amp;quot; to quickly create pages. Eventually I settled on using Eleventy, a simple static site generator.&lt;/p&gt;
-&lt;p&gt;Eleventy provides a wide variety of templating options and is simple enough to use and connect to github actions so that I can use Github Pages to host them. It also uses by default zero javascript.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/blog/post1/Gg6Iw1rWSn-797.avif 797w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/blog/post1/Gg6Iw1rWSn-797.webp 797w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/blog/post1/Gg6Iw1rWSn-797.png&quot; alt=&quot;&quot; width=&quot;797&quot; height=&quot;164&quot;&gt;&lt;/picture&gt;
-&lt;em&gt;templating languages that 11ty supports&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The only problem is that while I now have a pretty good base for a blog, it does not directly show off my stills with some of the more exciting front end frameworks.&lt;/p&gt;
-&lt;p&gt;With that said this blog is very much a work in progress and im glad I made this as I had a lot of fun working on this blog. Perhaps I can use it to showcase some of my previous and future projects.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
     <title>Food Reviews: Bob&#39;s Bulgogi</title>
     <link href="https://example.com/blog/blog/post3/" />
-    <updated>2024-08-24T00:00:00Z</updated>
+    <updated>2025-10-24T00:00:00Z</updated>
     <id>https://example.com/blog/blog/post3/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Location: 105 Victoria St, Toronto, ON M5C 1N7&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I was in the neighborhood helping my friend with an eye appointment and we needed a place to eat. Looking up nearby restaurants around the corner was Bob’s Bulgogi. Since I have not had Korean food in a while and liked that the name sounded like Bob’s Burgers, we decided to check it out.&lt;/p&gt;
@@ -60,6 +45,21 @@ Fair&lt;/p&gt;
 ⭐⭐⭐⭐⭐&lt;br&gt;
 5 out of 5 Angus’s&lt;/p&gt;
 &lt;p&gt;Final Verdict: Very yummy would go again&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Gus&#39;s First Post.</title>
+    <link href="https://example.com/blog/blog/post1/" />
+    <updated>2025-10-01T00:00:00Z</updated>
+    <id>https://example.com/blog/blog/post1/</id>
+    <content type="html">&lt;p&gt;Originally I was planing to create a website for the purpose of showing off some of my devlopement skills. The plan was to use either django, flask, or a combination of FASTAPI and React to create a website that I can use to show off my skills.&lt;/p&gt;
+&lt;p&gt;I quickly realized that I did not want to pay a cloud service provider to host the website and if possible wanted to host my blog on github pages. Unfortuantly github pages, while great at hosting static sites, is not so great at hosting dynamic web applications.&lt;/p&gt;
+&lt;p&gt;Even though I no longer was planing to use flask I still enjoyed using their templating engine &amp;quot;Jinga&amp;quot; to quickly create pages. Eventually I settled on using Eleventy, a simple static site generator.&lt;/p&gt;
+&lt;p&gt;Eleventy provides a wide variety of templating options and is simple enough to use and connect to github actions so that I can use Github Pages to host them. It also uses by default zero javascript.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/blog/post1/Gg6Iw1rWSn-797.avif 797w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/blog/post1/Gg6Iw1rWSn-797.webp 797w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/blog/post1/Gg6Iw1rWSn-797.png&quot; alt=&quot;&quot; width=&quot;797&quot; height=&quot;164&quot;&gt;&lt;/picture&gt;
+&lt;em&gt;templating languages that 11ty supports&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The only problem is that while I now have a pretty good base for a blog, it does not directly show off my stills with some of the more exciting front end frameworks.&lt;/p&gt;
+&lt;p&gt;With that said this blog is very much a work in progress and im glad I made this as I had a lot of fun working on this blog. Perhaps I can use it to showcase some of my previous and future projects.&lt;/p&gt;
 </content>
   </entry>
   <entry>
