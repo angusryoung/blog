@@ -1,18 +1,17 @@
 ---
-title: This is my second post with a much longer title.
-description: This is a post on My Blog about leveraging agile frameworks.
-date: 2018-07-04
-image: ./panda.jpg
-imageAlt: panda I found on pintrest
-tags: number 2
+title: "Art Review: dawningcrow"
+description: Gus shows the class an artist he is a fan of.
+date: 2024-07-04
+image: ./greencat.png
+imageAlt: green cat drawing from the magic bath comic by Kathy Lam
+tags: "Art Review"
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+I have always been a fan of the dawningcrow and their art style for a while. Recently I discovered a comic they made and I think you should check it out.
 
-## Section Header
+[Link to the Comic](https://www.dawningcrow.com/magic-bath-1)
 
-<a href="/blog/post1.md">First post</a>
-<a href="blog/post3.md">Third post</a>
+<img src="./comiccover.png" alt="The cover of the comic">
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+If you want to check out more of their art checkout their 
+[Instagram](https://www.instagram.com/dawning_crow/?hl=en)
