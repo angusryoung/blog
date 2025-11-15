@@ -5,7 +5,7 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://example.com/blog/feed/feed.xml" rel="self" />
   <link href="https://example.com/blog/" />
-  <updated>2025-10-20T00:00:00Z</updated>
+  <updated>2025-11-01T00:00:00Z</updated>
   <id>https://example.com/blog/</id>
   <author>
     <name>Your Name</name>
@@ -13,7 +13,7 @@
   <entry>
     <title>React Multiplayer RPS Game</title>
     <link href="https://example.com/blog/blog/post4/" />
-    <updated>2025-10-20T00:00:00Z</updated>
+    <updated>2025-11-01T00:00:00Z</updated>
     <id>https://example.com/blog/blog/post4/</id>
     <content type="html">&lt;p&gt;A while back, I had the pleasure of doing a game jam with some friends. We made a multiplayer platformer called &lt;a href=&quot;https://arkaniii.itch.io/cat-run&quot;&gt;Cat Run&lt;/a&gt;, where you race with some friends. This introduced me to &lt;a href=&quot;https://joinplayroom.com/&quot;&gt;PlayroomKit&lt;/a&gt; , a development tool used to create real-time web-based multiplayer games.&lt;/p&gt;
 &lt;p&gt;Anyway, I had some free time this evening and wanted to work on a React project.  I remembered that Playroomkit could be easily integrated with React applications. So I decided to create a small little rock-paper-scissors game. The game was quickly thrown together, taking inspiration from &lt;a href=&quot;https://www.rpsgame.org/&quot;&gt;Rock Paper Scissors Online&lt;/a&gt;, but I am impressed in what I was able to do in such a short time.&lt;/p&gt;
