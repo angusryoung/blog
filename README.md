@@ -1,6 +1,6 @@
-# eleventy-base-blog v9
+# Gus's eleventy-blog
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)).
+Based on a starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)).
 
 ## Getting Started
 
@@ -107,6 +107,9 @@ Deploy this Eleventy site in just a few clicks on these services:
 	- `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
 	- `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
 - `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
+
+
+Based on a starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)).
 
 #### Content Security Policy
 
