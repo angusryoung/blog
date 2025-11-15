@@ -1,7 +1,7 @@
 ---
 title: "Art Review: dawningcrow"
 description: Gus shows the class an artist he is a fan of.
-date: 2025-07-04
+date: 2025-10-04
 image: ./greencat.png
 imageAlt: green cat drawing from the magic bath comic by Kathy Lam
 tags: "Art Review"
